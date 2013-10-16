@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf8">
 		<meta http-equiv="x-ua-compatible" content="IE=9">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="format-detection" content="telephone=no">
 		<meta http-equiv="pragma" content="no-cache">
 		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-		
+	<!-- css	 -->
 	<link rel="stylesheet" href="../static/css/rostyle.css" type="text/css">
-<link rel="stylesheet" href="../static/css/roretina.css" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
-
-		<!-- Add IntroJs styles -->
-    	<link href="../static/css/introjs.css" rel="stylesheet">
-    	<link href="../static/css/bootstrap.css" rel="stylesheet">
-
-	</head>
-	<body id="home">
+	<link rel="stylesheet" href="../static/css/bootstrap3.css" >
+	     </head>
+		
+		<body id="home">
 	<div id = "subbody">
 		<div class="" style="display: none; position: absolute;">
 			<div class="aui_outer">
@@ -95,6 +92,8 @@
 				<li style="background:none;"><a href="http://4006024680.com/cgi-bin/turbo/;stok=1fd7907b5167ff3f64364e6b64315aa3/admin_web/passport/apps?sid=13" id="mobile" target="_blank"><span>移动管理</span></a></li>
 			</ul>
 		</div>
+		<div>
+
 		<div id="main">
 			<div id="services" class="guide_s">
 				<a href="appstore" id="plug-in" target="_blank"><span>云插件</span></a>
@@ -107,15 +106,125 @@
 				
 					<i class="cloud-alert func_alert" id="cloud-alert" title="" style="display:none;"></i>
 				</div>
+				
 				<a href="appstore" id="set_wifi" class="guide_s step3"><span>商店main</span></a>
-				<a href="#" id="set_network" class="guide_s step1 ok"><span>外网设置</span></a>
+				<a data-toggle="modal" href="#myModal" id="set_network" class="guide_s step1 ok"><span>外网设置</span></a>
 				
 			</div>
-			<div id="lans_list" class="step2"><span id="lan1" class="offline" ></span><span id="lan2" class="offline"></span></div>
 			<p id="devices">
-			<a href="#"><span>►</span>已有<em>2</em>台设备连接到路由器</a>
+			<a href="#"><span>►</span>已有<em>2</em>台设备连接</a>
 			</p>
-			<a href="logout" id="reboot" ><span>注销</span></a>
+			<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-title"><h3>外网设置</h3><h6>请选择您的上网方式</h6></div>
+        </div>
+        <div class="modal-body">
+          <!--tab开始，tab需要一个导航栏和内容栏-->  
+         <ul id="myTab" class="nav nav-tabs">  
+              <li class="active"><a href="#pppoe" data-toggle="tab">宽带拨号</a></li>  
+              <li><a href="#profile" data-toggle="tab">网线连接</a></li>  
+              <li><a href="#middle" data-toggle="tab">无线中继</a></li>
+        </ul>  
+        <div id="myTabContent" class="tab-content">  
+          <div class="tab-pane fade in active" id="pppoe">  
+            <br/><br/>
+                <div class="input-group">
+                <span class="input-group-addon">账号</span>
+                    <input type="text" class="form-control" placeholder="宽带账号">
+                </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">密码</span>
+                <input type="password" class="form-control" placeholder="宽带密码">
+                
+              </div>
+
+          <br/><br/>
+              
+          <button type="submit" class="btn btn-primary">保存</button>
+          <button type="button" class="btn btn-primary">取消</button>
+          </div>  
+              
+    <div class="tab-pane fade" id="profile">  
+            
+          <div class="btn-group">
+               <br/><br/>
+              <button type="button" class="btn btn-lg btn-default " id="dip">自动方式（DHCP）</button>
+              <button type="button" class="btn btn-lg btn-default " id="staticip">手动方式（静态IP）</button>  
+
+            
+
+   
+
+   <div id="ip_type_static_table" style="display:none; float:left;">
+              	<br/><br/>
+
+    <!--帐号密码:start-->
+    <p>
+        <label >IP地址</label>
+        <input id="" class="txt" type="text" value="" name="static_ip"></input>
+    </p>
+    <p>
+        <label>子网掩码</label>
+        <input id="" class="txt" type="text" value="" name="static_mask"></input>
+    </p>
+    <p>
+        <label>网关</label>
+        <input id="" class="txt" type="text" value="" name="static_gw"></input>
+    </p>
+    <p>
+        <label>DNS 地址</label>
+        <input id="" class="txt" type="text" value="" name="static_dns"></input>
+    </p>
+    <p>
+       
+    <!--
+
+     帐号密码:end
+
+    --> 
+
+</div>
+</div>
+            <br/><br/>
+          <button type="submit" class="btn btn-primary">保存</button>
+          <button type="button" class="btn btn-primary">取消</button>
+        </div>  
+        <div class="tab-pane fade" id="middle">  
+        	 <br/><br/>
+            <div class="input-group">
+                <span class="input-group-addon">网络名称</span>
+                    <input type="text" class="form-control" >
+                </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">网络密码</span>
+                <input type="password" class="form-control" >
+                
+              </div>
+          <div>状态 <span>未连接</span></div>
+          <br/><br/>
+          <button type="submit" class="btn btn-primary">保存</button>
+          <button type="button" class="btn btn-primary">取消</button>
+        </div> 
+      </div>  
+              
+        <!--tab结束-->  
+            
+          
+        </div>
+       
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+			
+		
+			<a href="#" id="reboot" ><span>重启</span></a>
 			<div style="display: none;" id="weixin_img"><img src="files/weixin.jpg"></div>
 		</div>
 	</div>
@@ -130,7 +239,6 @@
 <input value="0" id="guide_mode" type="hidden">
 
 
-<script type="text/javascript" src="../static/js/jquery-1.js"></script>
 
 
 
@@ -139,6 +247,19 @@
 </div>
 </div>
 
+<!-- js file -->
+<script type="text/javascript" src="../static/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap3.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+      $("#staticip").click(function(){
+          $("#ip_type_static_table").css("display","block");
+      });
+      $("#dip").click(function(){
+          $("#ip_type_static_table").css("display","none");
+      });
+  });
+  </script>
 
 </body>
 </html>

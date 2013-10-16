@@ -115,7 +115,7 @@ transform: rotate(360deg);
 #lans_list .lightning{ background-image: url(../images/lightning.png); background-repeat: no-repeat;}
 
 /* devices */
-#devices{ height: 22px; line-height: 22px; position: absolute; margin-top:189px; margin-left: 296px; overflow: hidden; padding: 5px 10px;}
+#devices{ height: 20px; line-height: 20px; position: absolute; margin-top:189px; margin-left: 296px; padding: 5px 10px; z-index: 1000;}
 #devices a{ color: #fff; font-size: 13px; width: 193px; height: 36px; line-height: 36px; display: block; padding-left: 36px; text-align: left;}
 #devices a em{ font-style: normal; color: yellow; padding: 0 5px;}
 #devices a span{ float: right; margin-right: 5px; font-size: 10px;}
@@ -296,3 +296,6 @@ display:block;
 
 /* wifi_box */
 .wifi_box{ padding: 20px 0 20px 80px;}
+
+/*ip box*/
+#ip_type_static_table label{display: inline-block; width:80px; text-align: right; }
