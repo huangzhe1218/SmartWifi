@@ -1,0 +1,32 @@
+$(function() {
+				    var options = {};
+    var wizard = $("#some-wizard").wizard({buttons:{nextText:"前进",backText:"后退",submitText:"提交"}});
+			$(".open-wizard").click(function() {
+		wizard.show();
+	});
+		wizard.on("submit", function(wizard) {
+		var submit = {
+			"hostname": $("#new-server-fqdn").val()
+		};
+
+		setTimeout(function() {
+			wizard.trigger("success");
+			wizard.hideButtons();
+			wizard._submitting = false;
+			wizard.showSubmitCard("success");
+			wizard._updateProgressBar(0);
+		}, 2000);
+		
+			wizard.el.find(".wizard-success .im-done").click(function() {
+		wizard.reset().close();
+	});
+
+	wizard.el.find(".wizard-success .create-another-server").click(function() {
+		wizard.reset();
+	});
+		
+	});
+	
+
+	
+})

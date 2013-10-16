@@ -1,0 +1,8 @@
+import xml.etree.ElementTree as ET
+
+def check_app(id1,stat):
+	id = id1-4
+	tree = ET.parse('static/js/data.xml')
+	root = tree.getroot()
+	root[id][1].text=stat
+	tree.write('static/js/data.xml')

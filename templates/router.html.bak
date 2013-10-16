@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=9">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		
+	<link rel="stylesheet" href="../static/css/rostyle.css" type="text/css">
+<link rel="stylesheet" href="../static/css/roretina.css" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
+
+		<!-- Add IntroJs styles -->
+    	<link href="../static/css/introjs.css" rel="stylesheet">
+    	<link href="../static/css/bootstrap.css" rel="stylesheet">
+
+	</head>
+	<body id="home">
+	<div id = "subbody">
+		<div class="" style="display: none; position: absolute;">
+			<div class="aui_outer">
+				<table class="aui_border">
+				<tbody>
+					<tr>
+						<td class="aui_nw">
+						</td>
+						<td class="aui_n">
+						</td>
+						<td class="aui_ne">
+						</td>
+					</tr>
+					<tr>
+						<td class="aui_w">
+						</td>
+						<td class="aui_c">
+									<div class="aui_inner">
+										<table class="aui_dialog">
+											<tbody>
+												<tr>
+													<td colspan="2" class="aui_header">
+														<div class="aui_titleBar">
+															<div style="cursor: move; display: none;" class="aui_title">
+															</div>
+															  <a class="aui_close" href="javascript:/*artDialog*/;">×</a>
+														</div></td></tr><tr><td style="" class="aui_icon">
+														<div style="background: url(&quot;http://4006024680.com/turbo-static/turbo/web/js/artDialog/skins/icons/warning.png&quot;) repeat scroll 0% 0% transparent;" class="aui_iconBg">
+														</div>
+													</td>
+													<td style="width: auto; height: auto;" class="aui_main">
+														<div style="padding: 20px 25px;" class="aui_content">
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="aui_footer">
+														<div style="" class="aui_buttons">
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+						</td>
+						<td class="aui_e">
+						</td>
+					</tr>
+				  <tr>
+								<td class="aui_sw">
+								</td>
+							  <td class="aui_s">
+							  </td>
+							  <td style="cursor: se-resize;" class="aui_se">
+							  </td>
+				  </tr>
+			 </tbody>
+			</table>
+		</div>
+	</div>
+<div id="header" >
+	<div class="wrap">
+		<p class="top_menu">
+			<a href="#" id="traffic_info">实时流量</a>
+			<!--<div id="step1">lalalla</div>-->
+			<!--<a class="btn btn-large btn-success" href="javascript:void(0);" onclick="startIntro();">Show me how</a>-->
+			<span class="pipe">|</span><a href="http://4006024680.com/cgi-bin/turbo/;stok=1fd7907b5167ff3f64364e6b64315aa3/admin_web/system/net_detect" id="system_netdetect" target="_blank">网络诊断</a>
+			<span class="pipe">|</span><a href="#" id="system_config">修改密码</a>
+			<span class="pipe">|</span><a href="#" id="setting_guide" href="javascript:void(0);" onclick="startIntro();">设置向导</a>
+			<span class="pipe">|</span><a href="http://4006024680.com/cgi-bin/turbo/;stok=1fd7907b5167ff3f64364e6b64315aa3/admin_web/logout">退出</a>
+		</p>
+		<h1><a href="#" id="logo">极路由HiWiFi</a></h1>
+	</div>
+</div>
+
+<div id="content">
+	<div class="wrap">
+		<div id="side">
+			<ul id="nav">
+				<li class="selected"><a href="#" id="home"><span>主 页</span></a></li>
+				<li><a href="#" id="state"><span>系统状态</span><i class="alert-icon" title="" id="system-alert" style="display:none;"></i></a></li>
+				<li><a href="#" id="options"><span>高级设置</span></a></li>
+				<li style="background:none;"><a href="http://4006024680.com/cgi-bin/turbo/;stok=1fd7907b5167ff3f64364e6b64315aa3/admin_web/passport/apps?sid=13" id="mobile" target="_blank"><span>移动管理</span></a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="services" class="guide_s">
+				<a href="appstore" id="plug-in" target="_blank"><span>云插件</span></a>
+			</div>
+			<div id="map">
+				<div style="display: none;" class="stream"></div>
+				
+				<div class="alert-icon">
+					<i class="network-alert func_alert" id="network-alert" title="WAN 未连接网线或断开连接" style=""></i>
+				
+					<i class="cloud-alert func_alert" id="cloud-alert" title="" style="display:none;"></i>
+				</div>
+				<a href="#" id="set_wifi" class="guide_s step3"><span>商店main</span></a>
+				<a href="#" id="set_network" class="guide_s step1"><span>外网设置</span></a>
+				
+			</div>
+			<div id="lans_list" class="step2"><span id="lan1" class="offline" ></span><span id="lan2" class="offline"></span></div>
+			<p id="devices">
+			<a href="#"><span>►</span>已有<em>2</em>台设备连接到路由器</a>
+			</p>
+			<a href="#" id="reboot" ><span>重启</span></a>
+			<div style="display: none;" id="weixin_img"><img src="files/weixin.jpg"></div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="wrap">
+		<p class="system_info">© 2013 中国电信北京研究院  版权所有<span class="pipe"></span> 系统版本 : xxxx-xxxx-xxxx<span class="pipe"></span> MAC : <span id="buttonmac">D4EE07013556</span><span class="pipe"></span>服务热线 : <span id="iphonenum">10000</span></p>
+		
+	</div>
+</div>
+<input value="0" id="close_guide_tag" type="hidden">
+<input value="0" id="guide_mode" type="hidden">
+
+
+<script type="text/javascript" src="../static/js/jquery-1.js"></script>
+<script type="text/javascript" src="../static/js/router.js"></script>
+
+<script type="text/javascript" src="../static/js/intro.js"></script>
+<script type="text/javascript" src="../static/js/router1.js"></script>
+
+
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: none repeat scroll 0% 0% rgb(255, 255, 255);">
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html class="ui-mobile">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>互联网路由器用户主界面</title>
+			<link rel="stylesheet"  href="../static/css/jquery.mobile-1.3.2.min.css">
+			<link rel="stylesheet" href="../static/css/jqm-demos.css">
+		    <link rel="stylesheet" href="../static/css/font.css">
+			<link rel="stylesheet" href="../static/css/grid-listview.css">
+			<script src="../static/js/jquery.js"></script>
+			<script src="../static/js/index.js"></script>
+			<script src="../static/js/jquery.mobile-1.3.2.js"></script>
+			<script src="../static/js/my.js"></script>
+			<script src="../static/js/check.js"></script>
+			<link rel="stylesheet" href="../static/css/yahei.css">
+		</head>
+		<body>
+			<div data-role="page" data-theme="a" id="demo-page" class="my-page">
+				<div data-role="header">
+					<h1 id="simple1">用户主界面</h1>
+				</div><!-- /header -->
+				
+				<div data-role="content">
+			        <ul data-role="listview"  data-inset="true" >
+			            <li  id="app10"><a   href="#" onclick="location='http://192.168.42.1:8001';"  >
+			        			<img src="../static/image/adv.png">
+			            	<h2 id="simple" >视频会议</h2>
+			                <p id="simple" >低成本视频解决方案</p>
+			                <p class="ui-li-aside">新上线</p>
+			            </a></li>
+			            <li  id="app11"><a  href="#"  onclick="location='http://192.168.42.1:8001';"  >
+			        			<img src="../static/image/pay.png">
+			            	<h2 id="simple" >条形码扫描</h2>
+			                <p id="simple" >查看扫描到商品的金额</p>
+			                <p class="ui-li-aside" id="simple">新上线</p>
+			            </a></li>
+			            <li  id="app12"><a  href="#" >
+			        			<img src="../static/image/news.png">
+			            	<h2 id="simple" >消息订阅</h2>
+			                <p id="simple" >网站、博客的最新消息与动态</p>
+			                <p class="ui-li-aside" id="simple">新上线</p>
+			            </a></li>
+			        </ul>       
+			    </div><!-- /content -->
+			    <div data-role="footer" data-theme="none">
+			    	<br>
+			    </div><!-- /footer -->
+			
+			</div><!-- /page -->
+		</body>
+	</html>

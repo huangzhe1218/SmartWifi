@@ -1,0 +1,69 @@
+$def with (mac)
+	<html class="ui-mobile">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>互联网路由器用户主界面</title>
+			<link rel="stylesheet"  href="../static/css/jquery.mobile-1.3.2.min.css">
+			<link rel="stylesheet" href="../static/css/jqm-demos.css">
+		    <link rel="stylesheet" href="../static/css/font.css">
+			<link rel="stylesheet" href="../static/css/grid-listview.css">
+			<script src="../static/js/jquery.js"></script>
+			<script src="../static/js/index.js"></script>
+			<script src="../static/js/jquery.mobile-1.3.2.js"></script>
+			<script src="../static/js/my.js"></script>
+			<script src="../static/js/check.js"></script>
+			<link rel="stylesheet" href="../static/css/yahei.css">
+		</head>
+		<body>
+			<div data-role="page" data-theme="a" id="demo-page" class="my-page">
+				<div data-role="header">
+					<h1 id="simple1">用户主界面</h1>
+				</div><!-- /header -->
+				
+				<div data-role="content">
+			        <ul data-role="listview"  data-inset="true" >
+			        	<li  id="app4"><a  href="#" onclick="location='http://www.yvoschaap.com/chainrxn/';" >
+			            	<img src="../static/image/game.png">
+			            	<h2 id="simple" >HTML5小游戏</h2>
+			                <p id="simple" >HTML5小游戏</p>
+			                 <p class="ui-li-aside" id="simple" >新上线</p>
+			            </a></li>
+			        	<li  id="app5"><a href="hotmenu">
+			            	<img src="../static/image/foodies.png">
+			            	<h2 id="simple" >热门菜品</h2>
+			                <p id="simple" >查看本店的热销菜品</p>
+			              
+			            </a></li>
+			        	<li  id="app6"><a href="groupon">
+			            	<img src="../static/image/coupon.png">
+			            	<h2 id="simple" >优惠券</h2>
+			                <p id="simple" >店内的优惠活动及说明</p>
+			            </a></li>
+			        	<li  id="app7"><a href="weibo">
+			            	<img src="../static/image/clipboard@2x.png">
+			            	<h2 id="simple" >微博留言墙</h2>
+			                <p id="simple" >微博关注并留言，参加抽奖活动</p>
+			           <p class="ui-li-aside" id="simple">新上线</p>
+			            </a></li>
+			        	<li  id="app8"><a  href="#" onclick="location='facerec';" >
+			        			<img src="../static/image/webcam.png">
+			            	<h2 id="simple" >VIP认证</h2>
+			                <p id="simple" >刷脸验证身份</p>
+			                <p class="ui-li-aside" id="simple">新上线</p>
+			            </a></li>
+			            <li  id="app9"><a  href="#" >
+			        			<img src="../static/image/wifi.png">
+			            	<h2 id="simple" >Wifi认证</h2>
+			                <p id="simple" >认证后访问互联网</p>
+			                <p class="ui-li-aside" id="simple">新上线</p>
+			            </a></li>
+			        <input type="hidden" id="check1" value=$mac />         
+			    </div><!-- /content -->
+			    <div data-role="footer" data-theme="none">
+			    	<br>
+			    </div><!-- /footer -->
+			
+			</div><!-- /page -->
+		</body>
+	</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh" xmlns:wb=“http://open.weibo.com/wb”>
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>index</title>
+		<meta name="description" content="" />
+		<meta name="author" content="plter" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+
+		<link rel="stylesheet" href="../static/css/jquery.mobile-1.3.2.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+		<script src="../static/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery.mobile-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+		   <style>
+   h1 {
+    font-family:"微软雅黑";
+}
+   body {
+    font-family:"微软雅黑";
+}
+</style>
+
+	</head>
+	
+	<body>
+
+
+<div data-role="header">
+    <h1 >微博留言墙</h1>
+    <a href="userapp" data-icon="back" class="ui-btn-right">返回主页</a>
+</div>
+	
+		    <div data-role="content" data-theme="a" >
+        <div class="article" >
+<wb:follow-button uid="1904039151" type="red_3" width="100%" height="24" ></wb:follow-button>
+<iframe width="100%" height="500"  frameborder="0" scrolling="no" src="http://widget.weibo.com/livestream/listlive.php?language=zh_cn&width=0&height=500&uid=1699423484&skin=1&refer=1&appkey=&pic=0&titlebar=1&border=1&publish=1&atalk=1&recomm=0&at=0&atopic=%E8%A5%BF%E8%B4%9D%E8%A5%BF%E5%8C%97%E8%8F%9C&ptopic=%E8%A5%BF%E8%B4%9D%E8%A5%BF%E5%8C%97%E8%8F%9C&dpc=1"></iframe>
+        </div><!-- /article -->
+    </div><!-- /content -->
+</div>
+
+	</body>
+</html>

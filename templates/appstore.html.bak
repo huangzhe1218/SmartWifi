@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>路由器应用超市</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../static/css/flat-ui.css" rel="stylesheet">
+		<link href="../static/css/bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+<link rel="stylesheet" href="../static/css/yahei.css">
+      <script src="../static/js/jquery-1.8.3.min.js"></script>
+      <script src="../static/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../static/js/jquery.ui.touch-punch.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/application.js"></script>
+     <script src="../static/js/bootbox.min.js"></script>
+     		<script src="../static/js/bootstrap-wizard.js"></script>
+  </head>
+  <body>
+    <div class="container">
+	
+		     <div class="row ">
+     <div class="span9">
+     	 	<br />
+    <h1>路由器应用超市</h1>
+  </div>
+        <div class="span3">
+        	<br />
+        	<br />
+          <a href="#fakelink" id="simple" class="btn  btn-block btn-inverse">返回主界面</a>
+        </div>
+			</div>
+<br/>
+<br/>
+   <ul id="myTab" class="nav nav-tabs">
+
+<li class="active" id="simple2" ><a href="#all" data-toggle="tab" >全部应用</a></li>
+
+<li id="simple2" ><a href="#guest" data-toggle="tab" >访客</a></li>
+<li id="simple2"><a href="#admin" data-toggle="tab" >管理员</a></li>
+<li id="simple2"><a href="#indoor" data-toggle="tab" >内部员工</a></li>
+<li id="simple2"><a href="#order" data-toggle="tab" id="readxml" >已启用</a></li>
+</ul>
+<div class="tab-content">
+		<div class="tab-pane active" id="all">
+			      <div class="row demo-tiles">
+        
+
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/doubanfm.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">豆瓣电台</h3>
+            <p id="simple">豆瓣电台Wifi音乐版，让红心曲目歌单到每个角落</p>
+  <a class="btn btn-primary btn-large btn-block open-wizard" >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/dropbox.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">DropBox云存储</h3>
+            <p id="simple">将云存储“拉近”到路由器，极速上传，自动同步</p>
+           <a class="btn btn-primary btn-large btn-block" href="upload"    >配置</a>
+          </div>
+        </div>
+        
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/mobile.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">手机远程管理</h3>
+            <p  id="simple">支持手机远程配置管理路由器，简化您的操作</p>
+            <a class="btn btn-primary btn-large btn-block app3"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/game.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">HTML5小游戏</h3>
+            <p id="simple">一款无需安装客户端，可以运行在任何设备的小游戏</p>
+        <a class="btn btn-primary btn-large btn-block app4"    >配置</a>
+          </div>
+
+        </div>
+      </div> <!-- /tiles -->
+
+      <div class="row demo-tiles">
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/foodies.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">热门菜品</h3>
+            <p id="simple">展示您在大众点评网上的热销菜品（适用于餐饮行业）</p>
+         <a class="btn btn-primary btn-large btn-block app5"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile ">
+            <img src="../static/image/coupon.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">优惠券</h3>
+            <p id="simple">店内的优惠活动及说明（适用于餐饮行业）</p>
+        <a class="btn btn-primary btn-large btn-block app6"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/clipboard@2x.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">微博留言墙</h3>
+            <p id="simple" >微博关注，留言，并参与店内抽奖（适用于餐饮行业）</p>
+            <a class="btn btn-primary btn-large btn-block app7"    >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/webcam.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">VIP认证 </h3>
+            <p id="simple">人脸识别VIP客户（适用于沿街商铺）</p>
+         <a class="btn btn-primary btn-large btn-block app8"   >配置</a>
+          </div>
+
+        </div>
+      </div> <!-- /tiles -->
+
+	      <div class="row demo-tiles">
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/wifi.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">WiFi认证</h3>
+            <p id="simple">限制访客访问互联网的权限（适用于沿街商铺）</p>
+         <a class="btn btn-primary btn-large btn-block app9"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile ">
+            <img src="../static/image/adv.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">视频会议</h3>
+            <p id="simple">支持各类终端的视频通话（适用于商务办公）</p>
+        <a class="btn btn-primary btn-large btn-block app10"    >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/pay.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">条形码扫描</h3>
+            <p id="simple" >打造低成本收银系统（适用于超市）</p>
+            <a class="btn btn-primary btn-large btn-block app11" >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/news.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">消息订阅</h3>
+            <p id="simple">推送网站、博客的最新消息与动态</p>
+         <a class="btn btn-primary btn-large btn-block app12"   >配置</a>
+          </div>
+
+        </div>
+      </div>
+		
+		
+		
+		</div>
+		<div class="tab-pane" id="guest">
+		   <div class="row demo-tiles">
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/foodies.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">热门菜品</h3>
+            <p id="simple">展示您在大众点评网上的热销菜品（适用于餐饮行业）</p>
+         <a class="btn btn-primary btn-large btn-block app5"   >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile ">
+            <img src="../static/image/coupon.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">优惠券</h3>
+            <p id="simple">店内的优惠活动及说明（适用于餐饮行业）</p>
+        <a class="btn btn-primary btn-large btn-block app6"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/clipboard@2x.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">微博留言墙</h3>
+            <p id="simple" >微博关注，留言，并参与店内抽奖（适用于餐饮行业）</p>
+            <a class="btn btn-primary btn-large btn-block app7"  >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/webcam.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">VIP认证 </h3>
+            <p id="simple">人脸识别VIP客户（适用于沿街商铺）</p>
+         <a class="btn btn-primary btn-large btn-block app8"   >配置</a>
+          </div>
+
+        </div>
+      </div>	
+			
+			 <div class="row demo-tiles">
+
+
+           <div class="span3">
+          <div class="tile">
+            <img src="../static/image/game.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">HTML5小游戏</h3>
+            <p id="simple">一款无需安装客户端，可以运行在任何设备的小游戏</p>
+        <a class="btn btn-primary btn-large btn-block app4"  >配置</a>
+          </div>
+
+        </div>
+
+ <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/wifi.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">WiFi认证</h3>
+            <p id="simple">限制访客访问互联网的权限（适用于沿街商铺）</p>
+         <a class="btn btn-primary btn-large btn-block app9" >配置</a>
+          </div>
+        </div>
+
+      </div>	
+			
+			
+			
+			
+			
+		</div>
+    <div class="tab-pane" id="admin">	      <div class="row demo-tiles">
+        
+
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/doubanfm.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">豆瓣电台</h3>
+            <p id="simple">豆瓣电台Wifi音乐版，让红心曲目歌单到每个角落</p>
+  <a class="btn btn-primary btn-large btn-block open-wizard" >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/dropbox.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">DropBox云存储</h3>
+            <p id="simple">将云存储“拉近”到路由器，极速上传，自动同步</p>
+           <a class="btn btn-primary btn-large btn-block"  href="upload"  >配置</a>
+          </div>
+        </div>
+        
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/mobile.png" alt="Compas@2x" class="tile-image big-illustration">
+            <h3 class="tile-title">手机远程管理</h3>
+            <p  id="simple">支持手机远程配置管理路由器，简化您的操作</p>
+            <a class="btn btn-primary btn-large btn-block app3"    >配置</a>
+          </div>
+        </div>
+
+      </div> 
+      </div>
+    <div class="tab-pane" id="indoor">   
+    	<div class="row demo-tiles">
+            <div class="span3">
+          <div class="tile tile-hot">
+            <img src="../static/image/pay.png" alt="Pensils@2x" class="tile-image">
+            <h3 class="tile-title">条形码扫描</h3>
+            <p id="simple" >打造低成本收银系统（适用于超市）</p>
+            <a class="btn btn-primary btn-large btn-block app11" >配置</a>
+          </div>
+        </div>
+
+        <div class="span3">
+          <div class="tile ">
+            <img src="../static/image/adv.png" alt="Infinity-Loop@2x" class="tile-image">
+            <h3 class="tile-title">视频会议</h3>
+            <p id="simple">支持各类终端的视频通话（适用于商务办公）</p>
+        <a class="btn btn-primary btn-large btn-block app10"  >配置</a>
+          </div>
+        </div>
+
+
+
+        <div class="span3">
+          <div class="tile">
+            <img src="../static/image/news.png" alt="Chat@2x" class="tile-image">
+            <h3 class="tile-title">消息订阅</h3>
+            <p id="simple">推送网站、博客的最新消息与动态</p>
+         <a class="btn btn-primary btn-large btn-block app12" >配置</a>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    <div class="tab-pane" id="order">		
+    	<h4>管理员类：</h4>
+    		<table class="table table-bordered">
+			            <thead>
+			              <tr>
+			                <th>应用名称</th>
+			                <th>状态</th>
+			              </tr>
+			            </thead>
+			            <tbody>
+			            	   <tr>
+			                <td>豆瓣电台</td>
+			                <td>已启动</td>
+			              </tr>
+			                 <tr>
+			                <td>DropBox云存储</td>
+			                <td>已启动</td>
+			              </tr>
+			              <tr>
+			                <td>手机远程管理</td>
+			                <td>已启动</td>
+			              </tr>
+			            </tbody>
+			          </table>
+			     <h4>访客类：</h4>
+			            		<table class="table table-bordered" >
+			            <thead>
+			              <tr>
+			                <th>应用名称</th>
+			                <th>状态</th>
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td>HTML5小游戏</td>
+			                <td id="app4"></td>
+			              </tr>
+			              <tr>
+			                <td>热门菜品</td>
+			                <td id="app5"></td>
+			              </tr>
+			              <tr>
+			                <td>优惠券</td>
+			                <td id="app6"></td>
+			              </tr>
+			               <tr>
+			                <td>微博留言墙</td>
+			                <td  id="app7"></td>
+			              </tr>
+			                <tr>
+			                <td>VIP认证</td>
+			                <td id="app8"></td>
+			              </tr>
+			              <tr>
+			                <td>Wifi认证</td>
+			                <td id="app9"></td>
+			              </tr>
+			            </tbody>
+			          </table>
+			          			     <h4>内部员工类：</h4>
+			            		<table class="table table-bordered">
+			            <thead>
+			              <tr>
+			                <th>应用名称</th>
+			                <th>状态</th>
+			              </tr>
+			            </thead>
+			            <tbody>
+			               <tr>
+			                <td>视频会议</td>
+			                <td id="app10"></td>
+			              </tr>
+			               <tr>
+			                <td>条形码扫描</td>
+			                <td id="app11"></td>
+			              </tr> 
+			              <tr>
+			                <td>消息订阅</td>
+			                <td id="app12"></td>
+			              </tr>        
+			            </tbody>
+			          </table>
+			          
+			          
+			          </div>
+</div>
+
+
+	<div class="wizard" id="some-wizard">
+ 
+    <h1>豆瓣电台配置</h1>
+ 
+    <div class="wizard-card" data-cardname="card1">
+        <h3>账号输入</h3>
+        
+				<div class="wizard-input-section">
+					<p>
+						填写您的用户名
+					</p>
+
+					<div class="control-group">
+						<input id ="new-server-name" type="text"
+							placeholder="" data-validate="" />
+					</div>
+				</div>
+				
+				
+				<div class="wizard-input-section">
+					<p>
+							输入您的密码
+					</p>
+
+					<div class="control-group">
+						<input id ="new-server-name" type="password"
+							placeholder="" data-validate="" />
+					</div>
+				</div>
+				
+    </div>
+ 
+    <div class="wizard-card" data-cardname="card2">
+        <h3>选择您的兆赫</h3>
+        				<div class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							我的红心兆赫
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">我的红心兆赫</a></li>
+							<li><a href="#">随机音乐</a></li>
+							<li><a href="#">古典兆赫</a></li>
+							<li><a href="#">流行兆赫</a></li>
+							<li><a href="#">摇滚兆赫</a></li>
+						</ul>
+					</div>
+    </div>
+     <div class="wizard-card" data-cardname="card3">
+        <h3>确认您的配置</h3>
+        	<div class="control-group">
+							<p>
+									验证通过后，即可开启您的音乐服务
+							</p>
+					</div>
+    </div>
+    
+    	<div class="wizard-success">
+				<div class="alert alert-success">
+					<span class="create-server-name"></span>
+					验证成功,请访问地址,<strong>http://192.168.42.1/play</strong>来控制您的音乐播放
+				</div>
+
+				<a class="btn create-another-server simple">重新配置</a>
+				<span style="padding:0 10px">or</span>
+				<a class="btn im-done simple">配置完毕</a>
+			</div>
+    
+    
+		</div>
+
+
+
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span7">
+            <h3 class="footer-title">新应用上线垂询@北研院智慧企业</h3>
+         
+          </div> <!-- /span8 -->
+
+
+     
+    
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Load JS here for greater good =============================-->
+     <script Charset="UTF-8" type="text/javascript" src="../static/js/my2.js"></script>
+  </body>
+</html>
